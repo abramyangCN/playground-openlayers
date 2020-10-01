@@ -2,14 +2,27 @@
   "name": "ol-webpack",
   "version": "1.0.0",
   "description": "Example using OpenLayers with Webpack",
+  "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js",
+    "develop": "cross-env NODE_ENV=development webpack-dev-server"
   },
   "devDependencies": {
-    "webpack": "^4.12.1",
-    "webpack-command": "^0.3.0"
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "corejs": "^1.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss": "^8.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "ol": "^5.1.2"
+    "ol": "^6.4.3",
+    "ol-ext": "^3.1.15"
   }
 }
